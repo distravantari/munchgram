@@ -1,4 +1,4 @@
-# MUCHGRAM
+# MUNCHGRAM
 react + webpack + es6 + redux
 
 ### file structure
