@@ -1,5 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal'
+
 import RegisterModal from './register'
 
 const customStyles = {
@@ -20,6 +21,9 @@ class LoginModal extends React.Component{
   register(){
     this.setState({ RegisterModal: true })
     this.props.onHide() //close LoginModal
+  }
+  callLogin(){ //calling login API
+
   }
   render() {
     let RegisterModalClose = () => this.setState({ RegisterModal: false }) //close RegisterModal

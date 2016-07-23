@@ -2,25 +2,42 @@ require('es6-promise').polyfill() // for IE
 
 import axios from 'axios'
 import host from '../host'
+import md5 from 'md5'
 
+// redux
+import store from '../../store'
+import { getToken } from '../../action/user-action'
+// end of redux
 
-export default function apitokenauth(username,password) {
+// generate a jwt-token
+function apitokenauth(username,password) {
   return axios({
     method: 'post',
     url: `${host()}/apitokenauth/`,
     data: {
-      username: username,
+      username: md5(username),
       password: password
     }
   })
 }
 
-export function login(username,password) {
+// put token to redux (user-action 'GET_TOKEN')
+function getToken(username,password){
+  apitokenauth(username,password) // call apitokenauth function
+  .then((res) => {
+    store.dispatch(getToken()) //store token to redux
+  })
+}
+
+export default function login(username,password,token) {
   return axios({
     method: 'post',
     url: `${host()}/setlogin/`,
+    headers: {
+      authorization: 'jwt '+token
+    },
     data: {
-      username: username,
+      username: md5(username),
       password: password
     }
   })
@@ -32,7 +49,7 @@ export function register(username,password,email) {
     url: `${host()}/register/`,
     data: {
       username: username,
-      password:password,
+      password:md5(password),
       email:email
     }
   })

@@ -10,6 +10,8 @@ react + webpack + es6 + redux
 - package.json (json file that contain the things you use to help you build this app)
 - webpack.config.js (your webpack configuration, usually is all things to do with your public/bundle.js file)
 
+#### NB: use react-router version 1.0.1
+
 ### How to run app ?!
 ##### development
 - go to your application folder using terminal
