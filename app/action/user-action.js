@@ -1,15 +1,15 @@
-import * as types from '../actions/action-types';
+import * as types from './action-types'
 
 export function getToken(token) {
   return {
     type: types.GET_TOKEN,
-    users
+    token
   };
 }
 
 //for IE user
 export function getAllToken(token) {
   return dispatch => {
-    dispatch(getUsers(token))
+    dispatch(getToken(token))
   }
 }

@@ -1,5 +1,7 @@
 import React from 'react'
-import LoginModal from '../modal/login'
+
+import LoginModal from '../modal/login' // import login modal
+import { logout,checkToken } from '../../utils/authentication/auth'// import logout function
 
 class topMenu extends React.Component{
   constructor(props,context){
@@ -9,8 +11,21 @@ class topMenu extends React.Component{
       loginModal: false
     }
   }
+  signout(val){
+    val.preventDefault() //prevent page from loading
+    logout() // clear all data
+  }
   render(){
     let loginModalClose = () => this.setState({ loginModal: false }) //close loginModal
+
+    // Set log button to login/logout
+    let logButton = ''
+    if (checkToken() == 'login') {
+      logButton = <li onClick={()=>this.setState({ loginModal: true })} ><a href="#">Login</a></li> //set log button (login)
+    }else{
+      logButton = <li onClick={(val)=>this.signout(val)} ><a href="#">Logout</a></li> //set log button (logout)
+    }
+    // END of Set log button to login/logout
 
     return(
       <div className="container">
@@ -25,7 +40,7 @@ class topMenu extends React.Component{
             <li><a href="#">Home</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">About Us</a></li>
-            <li onClick={()=>this.setState({ loginModal: true })} ><a href="#">Login</a></li>
+            { logButton }
           </ul>
         </nav>
         {/*<!--END TOP MENU-->*/}

@@ -15,34 +15,65 @@ function apitokenauth(username,password) {
     method: 'post',
     url: `${host()}/apitokenauth/`,
     data: {
-      username: md5(username),
-      password: password
+      username: username,
+      password: md5(password)
     }
   })
 }
+// end of generate token
 
-// put token to redux (user-action 'GET_TOKEN')
-function getToken(username,password){
-  apitokenauth(username,password) // call apitokenauth function
-  .then((res) => {
-    store.dispatch(getToken()) //store token to redux
-  })
-}
-
-export default function login(username,password,token) {
+// call login function
+function signin(username,password,token){
   return axios({
     method: 'post',
     url: `${host()}/setlogin/`,
     headers: {
-      authorization: 'jwt '+token
+      authorization: `jwt ${token}`
     },
     data: {
-      username: md5(username),
-      password: password
+      username: username,
+      password: md5(password)
     }
   })
 }
+// end of login function
 
+// call logout function
+export function logout(){
+  localStorage.clear() // clear all data that store to redux/ redux-locaStorage
+  window.location.reload() // reload page
+}
+// end of logout function
+
+// put token to redux (user-action 'GET_TOKEN') and directly go to signin function
+export default function login(username,password){
+  apitokenauth(username,password) // call apitokenauth function
+  .then((res) => {
+    store.dispatch(getToken(res.data.token)) //store token to redux
+
+    //call login API
+    signin(username,password,res.data.token)
+    .then((res) => {
+      console.log(res.data.is_login)
+      window.location.reload() //reload page
+    })
+    // end of login API
+  })
+  .catch((error) => {
+    alert(error.data.detail)
+  })
+}
+
+// check if token is exist
+export function checkToken (){
+  // console.log('store',store.getState().userState)
+  let value = 'login'
+  store.getState().userState.token.length > 0 ? value = 'logout' : value = value// if token exist, login change to logout
+  return value // return value (logout/login)
+}
+// end of check token
+
+// call register API
 export function register(username,password,email) {
   return axios({
     method: 'post',
@@ -54,3 +85,4 @@ export function register(username,password,email) {
     }
   })
 }
+// end of call register API

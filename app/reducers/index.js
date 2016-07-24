@@ -7,14 +7,11 @@ import userReducer from './user-reducer'
 // import languageReducer from './language-reducer'
 
 // Combine Reducers
-// var reducers = combineReducers({
-    // userState: userReducer,
-    // balanceState: balanceReducer,
-    // cookiesState: cookiesReducer,
-    // languageState: languageReducer
-// });
+var reducers = combineReducers({
+    userState: userReducer
+})
 
 // one Reducers
-var reducers = userReducer
+// var reducers = ({userState:userReducer})
 
 export default reducers
