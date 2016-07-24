@@ -16,7 +16,7 @@ class LoginModal extends React.Component{
     super(props)
     context.router
     this.state = {
-      registerModal: false
+      RegisterModal: false
     }
   }
   register(){

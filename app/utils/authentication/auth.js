@@ -69,6 +69,7 @@ export function checkToken (){
   // console.log('store',store.getState().userState)
   let value = 'login'
   store.getState().userState.token.length > 0 ? value = 'logout' : value = value// if token exist, login change to logout
+  console.log('length',store.getState().userState.token.length)
   return value // return value (logout/login)
 }
 // end of check token
