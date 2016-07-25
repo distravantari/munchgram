@@ -6,7 +6,7 @@ import md5 from 'md5'
 
 // redux
 import store from '../../store'
-import { getToken } from '../../action/user-action'
+import { getToken,getId,getUsername } from '../../action/user-action'
 // end of redux
 
 // generate a jwt-token
@@ -50,10 +50,12 @@ export default function login(username,password){
   apitokenauth(username,password) // call apitokenauth function
   .then((res) => {
     store.dispatch(getToken(res.data.token)) //store token to redux
+    store.dispatch(getUsername(username)) //store username to redux
 
     //call login API
     signin(username,password,res.data.token)
     .then((res) => {
+      store.dispatch(getId(res.data.user_id))
       console.log(res.data.is_login)
       window.location.reload() //reload page
     })
@@ -69,7 +71,7 @@ export function checkToken (){
   // console.log('store',store.getState().userState)
   let value = 'login'
   store.getState().userState.token.length > 0 ? value = 'logout' : value = value// if token exist, login change to logout
-  console.log('length',store.getState().userState.token.length)
+  // console.log('length',store.getState().userState.token.length)
   return value // return value (logout/login)
 }
 // end of check token

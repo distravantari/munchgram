@@ -2,18 +2,26 @@ import React from 'react'
 import { Alert,Button } from 'react-bootstrap'
 
 import { checkToken } from '../../utils/authentication/auth'// import logout function
+import { isProfileComplete } from '../../utils/profile/profile'// import isProfileComplete function
 
 class alert extends React.Component{
   constructor(props,context){
     super(props)
     context.router
     this.state = {
-      alertVisible: true
+      alertVisible: false
     }
   }
   componentDidMount(){
-    // console.log(checkToken())
-    checkToken() == 'login' && this.setState({alertVisible: false}) // if not yet login, no complete profile alert
+    // checkToken() == 'login' && this.setState({alertVisible: false}) // if not yet login, no complete profile alert
+    checkToken() == 'logout' && this.isProfile() // check profile completeness after login
+  }
+  isProfile(){ //check is the profile complete?
+    // isProfileComplete()
+    isProfileComplete()
+    .catch((res) => {
+      this.setState({alertVisible: true})
+    })
   }
   handleAlertDismiss() {
     this.setState({ alertVisible: false })

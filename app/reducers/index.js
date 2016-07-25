@@ -11,7 +11,4 @@ var reducers = combineReducers({
     userState: userReducer
 })
 
-// one Reducers
-// var reducers = ({userState:userReducer})
-
 export default reducers

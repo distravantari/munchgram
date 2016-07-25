@@ -4,11 +4,17 @@ import Modal from 'react-modal'
 import RegisterModal from './register'
 import login from '../../utils/authentication/auth'
 
+// MODAL STYLE
 const customStyles = {
   content : {
     background: 'transparent',
     border    : 'transparent'
   }
+}
+// END OF MODAL STYLE
+
+const responseFacebook = (response) => {
+  console.log(response);
 }
 
 class LoginModal extends React.Component{
@@ -48,7 +54,7 @@ class LoginModal extends React.Component{
               </div>
               <div className="modal-body">
 
-                <form onSubmit={(val) => this.handleLogin(val)}>
+                <form>
                   <div className="input-group input-block">
                     <span className="input-group-addon">
                       <i className="fa fa-user"></i>
@@ -63,8 +69,11 @@ class LoginModal extends React.Component{
                   </div>
 
                   {/*LOGIN button*/}
-                  <input type="submit" className="btn btn-default btn-block" value="Login" />
-                  <input className="btn btn-facebook btn-block" value="Login with Facebook" />
+                  <input type="submit" onClick={(val) => this.handleLogin(val)} className="btn btn-default btn-block" value="Login" />
+                  {/*<input className="btn btn-facebook btn-block" value="Login with Facebook" />*/}
+
+
+
                   <input className="btn btn-google btn-block" value="Login with Google" />
                   {/*end LOGIN button*/}
                 </form>
