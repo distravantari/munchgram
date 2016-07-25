@@ -2,6 +2,7 @@ import React from 'react'
 import Modal from 'react-modal'
 
 import RegisterModal from './register'
+import Forgotpassword from './forgotPassword'
 import login from '../../utils/authentication/auth'
 
 // MODAL STYLE
@@ -22,11 +23,16 @@ class LoginModal extends React.Component{
     super(props)
     context.router
     this.state = {
-      RegisterModal: false
+      RegisterModal: false,
+      ForgotpasswordModal: false,
     }
   }
   register(){
     this.setState({ RegisterModal: true })
+    this.props.onHide() //close LoginModal
+  }
+  forgotpassword(){
+    this.setState({ ForgotpasswordModal: true })
     this.props.onHide() //close LoginModal
   }
   handleLogin(val){
@@ -38,6 +44,8 @@ class LoginModal extends React.Component{
   }
   render() {
     let RegisterModalClose = () => this.setState({ RegisterModal: false }) //close RegisterModal
+    let ForgotModalClose = () => this.setState({ ForgotpasswordModal: false }) //close RegisterModal
+
 
     return (
       <div className="modal fade">
@@ -70,15 +78,12 @@ class LoginModal extends React.Component{
 
                   {/*LOGIN button*/}
                   <input type="submit" onClick={(val) => this.handleLogin(val)} className="btn btn-default btn-block" value="Login" />
-                  {/*<input className="btn btn-facebook btn-block" value="Login with Facebook" />*/}
-
-
-
+                  <input className="btn btn-facebook btn-block" value="Login with Facebook" />
                   <input className="btn btn-google btn-block" value="Login with Google" />
                   {/*end LOGIN button*/}
                 </form>
 
-                <a href="#">Lost your password?</a>
+                <a href="#" onClick={()=> this.forgotpassword()}>Lost your password?</a>
               </div>
               <div className="modal-footer">
                 <p>Not a member? <a href="#" onClick={()=> this.register()} >Register</a></p> {/*go to register modal*/}
@@ -91,6 +96,9 @@ class LoginModal extends React.Component{
         {/*START RegisterModal*/}
           <RegisterModal show={this.state.RegisterModal} onHide={RegisterModalClose} />
         {/*END RegisterModal*/}
+        {/*START forgotpasswordModal*/}
+          <Forgotpassword show={this.state.ForgotpasswordModal} onHide={ForgotModalClose} />
+        {/*END forgotpasswordModal*/}
       </div>
     )
   }
