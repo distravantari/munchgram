@@ -27,7 +27,7 @@ react + webpack + es6 + redux
 - double click public/index.html
 
 ### about website
-template we're using : https://themeforest.net/item/modarama-magazine-html5-template/6532785
+template we're using : https://themeforest.net/item/modarama-magazine-html5-template/6532785  
 components :  (index)  
 - Header
     - top menu
