@@ -16,9 +16,10 @@ react + webpack + es6 + redux, redux-localstorage
 ##### development
 - go to your application folder using terminal
 - run npm install
-    - npm install -g (see all this things on geting start with react, visit this for more info: https://github.com/distravantari/start-react )
+- run npm install -g webpack 
 - run webpack -w
 - double click public/index.html
+for more information visit : https://github.com/distravantari/start-react
 
 ##### production
 - go to your application folder using terminal
@@ -45,7 +46,8 @@ react + webpack + es6 + redux, redux-localstorage
         -  latest comment
     - recent-update (android/ios recent update)
 - Main Section
-- Footer
+- Footer  
+
 ##### REDUX
 we store username, id and token in redux rightnow, there are 2 folders (action and reducers) and one file (store.js) on app folder, the reason why we don't put it on file structure above because react and redux is a completely deferent technology.  
 here is the file structure for redux (all this things is located on your app folder)
@@ -58,5 +60,5 @@ here is the file structure for redux (all this things is located on your app fol
 - store.js
 
 ###### example
-to store a data : store.dispatch(getToken(result))
+to store a data : store.dispatch(getToken(result))  
 to receive a data : store.getState().userState.token
