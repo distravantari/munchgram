@@ -25,6 +25,7 @@ class forgotModal extends React.Component{
     forgotpassword(this.usernameRef.value)
     .then((res) => {
       alert(`${res.data.message}, please check your email`)
+      window.location.reload() // reload page after username click ok button on prompt
     })
     .catch((res) => {
       alert(res.data.message)
