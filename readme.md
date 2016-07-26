@@ -1,5 +1,5 @@
 # MUNCHGRAM
-react + webpack + es6 + redux
+react + webpack + es6 + redux, redux-localstorage
 
 ### file structure
 - app folder (your react code goes here)
@@ -27,9 +27,9 @@ react + webpack + es6 + redux
 - double click public/index.html
 
 ### about website
-template we're using : https://themeforest.net/item/modarama-magazine-html5-template/6532785    
+##### template we're using : https://themeforest.net/item/modarama-magazine-html5-template/6532785      
 
-components :  (index)  
+##### components :  (index)  
 - Header
     - top menu
 - Main Menu
@@ -38,7 +38,7 @@ components :  (index)
         -  most popular food
         -  latest news
         -  most discuss post
-    - food-list 
+    - food-list
     - lower section
         - popular restaurant
         -  popular food based on category
@@ -46,3 +46,17 @@ components :  (index)
     - recent-update (android/ios recent update)
 - Main Section
 - Footer
+##### REDUX
+we store username, id and token in redux rightnow, there are 2 folders (action and reducers) and one file (store.js) on app folder, the reason why we don't put it on file structure above because react and redux is a completely deferent technology.  
+here is the file structure for redux (all this things is located on your app folder)
+- action
+    - action-types.js
+    -  user-state.js
+- reducers
+    - index.js
+    - user-reducer.js
+- store.js
+
+###### example
+to store a data : store.dispatch(getToken(result))
+to receive a data : store.getState().userState.token
