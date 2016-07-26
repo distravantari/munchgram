@@ -45,7 +45,7 @@ react + webpack + es6 + redux, redux-localstorage
         -  latest comment
     - recent-update (android/ios recent update)
 - Main Section
-- Footer  
+- Footer    
 ##### REDUX
 we store username, id and token in redux rightnow, there are 2 folders (action and reducers) and one file (store.js) on app folder, the reason why we don't put it on file structure above because react and redux is a completely deferent technology.  
 here is the file structure for redux (all this things is located on your app folder)
