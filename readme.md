@@ -25,3 +25,23 @@ react + webpack + es6 + redux
 - change webpack.config.js configuration to production mode
 - run webpack -p
 - double click public/index.html
+
+### about website
+template we're using : https://themeforest.net/item/modarama-magazine-html5-template/6532785
+components :  (index)  
+- Header
+    - top menu
+- Main Menu
+    - upper-section
+        - promotion
+        -  most popular food
+        -  latest news
+        -  most discuss post
+    - food-list 
+    - lower section
+        - popular restaurant
+        -  popular food based on category
+        -  latest comment
+    - recent-update (android/ios recent update)
+- Main Section
+- Footer
