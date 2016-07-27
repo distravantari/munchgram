@@ -29588,6 +29588,10 @@
 
 	var _promo2 = _interopRequireDefault(_promo);
 
+	var _contactUs = __webpack_require__(846);
+
+	var _contactUs2 = _interopRequireDefault(_contactUs);
+
 	var _reactRouter = __webpack_require__(490);
 
 	var _history = __webpack_require__(825);
@@ -29596,14 +29600,9 @@
 
 	// END CHILDREN
 
-	// START CHILDREN
 	var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({ queryKey: false });
 
-	// const appHistory = createAppHistory({
-	//   parseQueryString: parse,
-	//   stringifyQuery: stringify
-	// })
-
+	// START CHILDREN
 	exports.default = _react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: history, onUpdate: function onUpdate() {
@@ -29613,6 +29612,7 @@
 	    _reactRouter.Route,
 	    { path: '/', component: _Main2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: 'promo/', component: _promo2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'contact-us/', component: _contactUs2.default }),
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _index2.default })
 	  )
 	);
@@ -29873,9 +29873,9 @@
 	              'li',
 	              null,
 	              _react2.default.createElement(
-	                'a',
-	                { href: '#' },
-	                'Contact Us'
+	                _reactRouter.Link,
+	                { to: '/contact-us/' },
+	                'Contact us'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -70567,6 +70567,667 @@
 
 	exports['default'] = _deprecate2['default'](_useQueries2['default'], 'enableQueries is deprecated, use useQueries instead');
 	module.exports = exports['default'];
+
+/***/ },
+/* 846 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(298);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _upperSection = __webpack_require__(847);
+
+	var _upperSection2 = _interopRequireDefault(_upperSection);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//promotion,most popular food,latest news,most discuss post
+
+	var Promo = function (_React$Component) {
+	  _inherits(Promo, _React$Component);
+
+	  function Promo() {
+	    _classCallCheck(this, Promo);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Promo).apply(this, arguments));
+	  }
+
+	  _createClass(Promo, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'main' },
+	          _react2.default.createElement(_upperSection2.default, null)
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Promo;
+	}(_react2.default.Component);
+
+	exports.default = Promo;
+
+/***/ },
+/* 847 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(298);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var contain = function (_React$Component) {
+		_inherits(contain, _React$Component);
+
+		function contain() {
+			_classCallCheck(this, contain);
+
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(contain).apply(this, arguments));
+		}
+
+		_createClass(contain, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "row" },
+					_react2.default.createElement(
+						"div",
+						{ className: "contact-us col-md-9 col-sm-12" },
+						_react2.default.createElement(
+							"h2",
+							null,
+							"Contact us"
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "row" },
+							_react2.default.createElement(
+								"div",
+								{ className: "map col-md-12 col-sm-12" },
+								_react2.default.createElement("iframe", { src: "https://www.google.com.ua/maps?f=d&source=s_d&saddr=48.209746,16.348501&daddr=&hl=uk&geocode=&sll=48.209575,16.365509&sspn=0.033404,0.084543&mra=mift&mrsp=0&sz=14&ie=UTF8&t=m&z=13&output=embed" })
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "row" },
+							_react2.default.createElement(
+								"div",
+								{ className: "col-md-6 col-sm-6" },
+								_react2.default.createElement(
+									"h3",
+									null,
+									"Contact details"
+								),
+								_react2.default.createElement(
+									"ul",
+									{ className: "contact-details" },
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement("i", { className: "fa fa-map-marker" }),
+										_react2.default.createElement(
+											"div",
+											null,
+											_react2.default.createElement(
+												"p",
+												null,
+												"33 Broadway Steet, Suite 32, New York"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"NY 1812 United States"
+											)
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement("i", { className: "fa fa-phone" }),
+										_react2.default.createElement(
+											"div",
+											null,
+											_react2.default.createElement(
+												"p",
+												null,
+												"+2 (555) 6498-241-2548"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"+2 (555) 6498-241-2543"
+											)
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement("i", { className: "fa fa-envelope-o" }),
+										_react2.default.createElement(
+											"div",
+											null,
+											_react2.default.createElement(
+												"p",
+												null,
+												_react2.default.createElement(
+													"span",
+													null,
+													"Email:"
+												),
+												" envato@mail.com"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"themeforest@mail.com"
+											)
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement("i", { className: "fa fa-facebook" }),
+										_react2.default.createElement(
+											"div",
+											null,
+											_react2.default.createElement(
+												"p",
+												null,
+												_react2.default.createElement(
+													"span",
+													null,
+													"Facebook:"
+												),
+												" www.facebook.com/modarama"
+											),
+											_react2.default.createElement(
+												"p",
+												null,
+												"www.facebook.com/modarama_magazine"
+											)
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "contact-form col-md-6 col-sm-6" },
+								_react2.default.createElement(
+									"h3",
+									null,
+									"Get in touch"
+								),
+								_react2.default.createElement(
+									"form",
+									{ method: "post", id: "contact", name: "contact" },
+									_react2.default.createElement(
+										"div",
+										{ className: "row" },
+										_react2.default.createElement(
+											"div",
+											{ className: "col-md-6 col-sm-6 input-group" },
+											_react2.default.createElement(
+												"span",
+												{ className: "input-group-addon" },
+												_react2.default.createElement("i", { className: "fa fa-user" })
+											),
+											_react2.default.createElement("input", { type: "text", className: "form-control", name: "name", id: "name", placeholder: "Name (required)", required: true })
+										),
+										_react2.default.createElement(
+											"div",
+											{ className: "col-md-6 col-sm-6 input-group" },
+											_react2.default.createElement(
+												"span",
+												{ className: "input-group-addon" },
+												_react2.default.createElement("i", { className: "fa fa-envelope-o add-on" })
+											),
+											_react2.default.createElement("input", { type: "email", className: "form-control", name: "email", id: "email", placeholder: "Email (required)", required: true })
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "row" },
+										_react2.default.createElement(
+											"div",
+											{ className: "col-md-12 col-sm-12" },
+											_react2.default.createElement("textarea", { className: "form-control", name: "message", id: "message", required: true, placeholder: "Message", rows: "9" })
+										)
+									),
+									_react2.default.createElement("input", { className: "btn btn-default", id: "submit", type: "submit", name: "submit", value: "Send" })
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "alert alert-danger" },
+									_react2.default.createElement(
+										"button",
+										{ type: "button", className: "close", "data-dismiss": "alert" },
+										"×"
+									),
+									_react2.default.createElement(
+										"strong",
+										null,
+										"Oh snap!"
+									),
+									" Change a few things up and try submitting again."
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "alert alert-success" },
+									_react2.default.createElement(
+										"button",
+										{ type: "button", className: "close", "data-dismiss": "alert" },
+										"×"
+									),
+									_react2.default.createElement(
+										"strong",
+										null,
+										"Well done!"
+									),
+									" Your message was sent succssfully!"
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						"aside",
+						{ className: "col-md-3 col-sm-12" },
+						_react2.default.createElement(
+							"ul",
+							{ className: "aside-social list-inline visible-md visible-lg" },
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("i", { className: "fa fa-facebook" }),
+								_react2.default.createElement(
+									"p",
+									null,
+									"162K"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("i", { className: "fa fa-twitter" }),
+								_react2.default.createElement(
+									"p",
+									null,
+									"73K"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("i", { className: "fa fa-google-plus" }),
+								_react2.default.createElement(
+									"p",
+									null,
+									"29K"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement("i", { className: "fa fa-rss" }),
+								_react2.default.createElement(
+									"p",
+									null,
+									"9,012"
+								)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "newsletter visible-md visible-lg" },
+							_react2.default.createElement(
+								"h3",
+								null,
+								"Newsletter"
+							),
+							_react2.default.createElement(
+								"p",
+								null,
+								"Subscribe to be the first to know our about sales, events and special offers!"
+							),
+							_react2.default.createElement(
+								"form",
+								{ action: "POST" },
+								_react2.default.createElement("input", { type: "email", className: "form-control", placeholder: "Enter your email" }),
+								_react2.default.createElement("input", { type: "submit", value: "subscribe", className: "btn btn-default btn-block" })
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "flickr col-md-12 col-sm-6" },
+							_react2.default.createElement(
+								"h4",
+								null,
+								"Flickr photostream"
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "most-commented col-md-12 col-sm-6" },
+							_react2.default.createElement(
+								"h4",
+								null,
+								"Most commented posts"
+							),
+							_react2.default.createElement(
+								"article",
+								{ className: "small clearfix" },
+								_react2.default.createElement(
+									"div",
+									{ className: "counter" },
+									_react2.default.createElement("i", { className: "fa fa-comment" }),
+									_react2.default.createElement(
+										"p",
+										null,
+										"74"
+									)
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "info" },
+									_react2.default.createElement(
+										"p",
+										{ className: "tags" },
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"Science"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"lifestyle"
+										)
+									),
+									_react2.default.createElement(
+										"h1",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"Ray Ban Experience"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "details" },
+										"Sep 25, 2013 | ",
+										_react2.default.createElement(
+											"a",
+											{ href: "author.html" },
+											"Alex Grosville"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "text" },
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+									)
+								),
+								_react2.default.createElement(
+									"ul",
+									{ className: "counters list-inline" },
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-eye" }),
+											"15271"
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-comment" }),
+											"25"
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-heart" }),
+											"724"
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								"article",
+								{ className: "small clearfix" },
+								_react2.default.createElement(
+									"div",
+									{ className: "counter" },
+									_react2.default.createElement("i", { className: "fa fa-comment" }),
+									_react2.default.createElement(
+										"p",
+										null,
+										"74"
+									)
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "info" },
+									_react2.default.createElement(
+										"p",
+										{ className: "tags" },
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"Science"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"lifestyle"
+										)
+									),
+									_react2.default.createElement(
+										"h1",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"Moto X Drop Test"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "details" },
+										"Sep 25, 2013 | ",
+										_react2.default.createElement(
+											"a",
+											{ href: "author.html" },
+											"Alex Grosville"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "text" },
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+									)
+								),
+								_react2.default.createElement(
+									"ul",
+									{ className: "counters list-inline" },
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-eye" }),
+											"15271"
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-comment" }),
+											"25"
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-heart" }),
+											"724"
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								"article",
+								{ className: "small clearfix" },
+								_react2.default.createElement(
+									"div",
+									{ className: "counter" },
+									_react2.default.createElement("i", { className: "fa fa-comment" }),
+									_react2.default.createElement(
+										"p",
+										null,
+										"74"
+									)
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "info" },
+									_react2.default.createElement(
+										"p",
+										{ className: "tags" },
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"Science"
+										),
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"lifestyle"
+										)
+									),
+									_react2.default.createElement(
+										"h1",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											"Lomography"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "details" },
+										"Sep 25, 2013 | ",
+										_react2.default.createElement(
+											"a",
+											{ href: "author.html" },
+											"Alex Grosville"
+										)
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "text" },
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+									)
+								),
+								_react2.default.createElement(
+									"ul",
+									{ className: "counters list-inline" },
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-eye" }),
+											"15271"
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-comment" }),
+											"25"
+										)
+									),
+									_react2.default.createElement(
+										"li",
+										null,
+										_react2.default.createElement(
+											"a",
+											{ href: "" },
+											_react2.default.createElement("i", { className: "fa fa-heart" }),
+											"724"
+										)
+									)
+								)
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return contain;
+	}(_react2.default.Component);
+
+	exports.default = contain;
 
 /***/ }
 /******/ ]);

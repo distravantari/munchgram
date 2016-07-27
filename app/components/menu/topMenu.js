@@ -39,7 +39,7 @@ class topMenu extends React.Component{
           <a href="#" id="header-menu-button"><i className="fa fa-bars"></i></a>
           <ul className="list-inline">
             <li><Link to='/'>Home</Link></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><Link to='/contact-us/'>Contact us</Link></li>
             <li><a href="#">About Us</a></li>
             { logButton }
           </ul>
