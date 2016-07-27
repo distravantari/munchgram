@@ -6,97 +6,6 @@ class contain extends React.Component{
       <div className="category row">
         {/*<!--CATEGORY SECTION-->*/}
         <div className="col-md-9 col-sm-12">
-          <h3>Popular Restaurant</h3>
-          <div className="row">
-            <article className="col-md-4 col-sm-4 mid">
-              <div className="img">
-                <img src="assets/img/mid.jpg" alt="post" />
-                <div className="overlay"></div>
-              </div>
-              <div className="info">
-                <p className="tags">
-                  <a href="">Fashion</a>
-                  <a href="">Inspiration</a>
-                  <a href="">lifestyle</a>
-                </p>
-                <h1><a href="">Somewhere In Europe</a></h1>
-                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-                <p className="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-
-              </div>
-              <ul className="counters list-inline">
-                <li>
-                  <a href=""><i className="fa fa-eye"></i>15271</a>
-                </li>
-                <li>
-                  <a href=""><i className="fa fa-comment"></i>25</a>
-                </li>
-                <li>
-                  <a href=""><i className="fa fa-heart"></i>724</a>
-                </li>
-              </ul>
-            </article>
-            <article className="col-md-4 col-sm-4 mid">
-              <div className="img">
-                <img src="assets/img/mid.jpg" alt="post" />
-                <div className="overlay"></div>
-              </div>
-              <div className="info">
-                <p className="tags">
-                  <a href="">Science</a>
-                  <a href="">lifestyle</a>
-                </p>
-                <h1><a href="">Fishing Nowadays</a></h1>
-                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-                <p className="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-
-              </div>
-              <ul className="counters list-inline">
-                <li>
-                  <a href=""><i className="fa fa-eye"></i>15271</a>
-                </li>
-                <li>
-                  <a href=""><i className="fa fa-comment"></i>25</a>
-                </li>
-                <li>
-                  <a href=""><i className="fa fa-heart"></i>724</a>
-                </li>
-              </ul>
-            </article>
-            <article className="col-md-4 col-sm-4 mid">
-              <div className="img">
-                <img src="assets/img/mid.jpg" alt="post" />
-                <div className="overlay"></div>
-              </div>
-              <div className="info">
-                <p className="tags">
-                  <a href="">Science</a>
-                  <a href="">lifestyle</a>
-                </p>
-                <h1><a href="">NY City Pabs</a></h1>
-                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-                <p className="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-
-              </div>
-              <ul className="counters list-inline">
-                <li>
-                  <a href=""><i className="fa fa-eye"></i>15271</a>
-                </li>
-                <li>
-                  <a href=""><i className="fa fa-comment"></i>25</a>
-                </li>
-                <li>
-                  <a href=""><i className="fa fa-heart"></i>724</a>
-                </li>
-              </ul>
-            </article>
-          </div>
           {/*<!--TABS-->*/}
           <div className="row">
             <div className="col-md-12 col-sm-12">
@@ -1112,17 +1021,6 @@ class contain extends React.Component{
             </div>
           </div>
 
-          <div id="twitter" className="col-md-12 col-sm-6">
-            <h4>Latest comments</h4>
-            <div>
-              <a className="twitter-timeline" href="https://twitter.com/envato" data-widget-id="400278156189237248" data-link-color="#f1284e" data-chrome="noheader nofooter   noscrollbar" lang="EN" data-tweet-limit="2">
-                @envato
-              </a>
-              {/*<script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-              </script>*/}
-            </div>
-          </div>
         </aside>
         {/*<!--END SIDEBAR-->*/}
       </div>

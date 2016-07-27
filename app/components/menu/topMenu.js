@@ -38,7 +38,7 @@ class topMenu extends React.Component{
         <nav className="clearfix">
           <a href="#" id="header-menu-button"><i className="fa fa-bars"></i></a>
           <ul className="list-inline">
-            <li><a href="#">Home</a></li>
+            <li><Link to='/'>Home</Link></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">About Us</a></li>
             { logButton }

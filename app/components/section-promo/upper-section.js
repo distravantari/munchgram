@@ -30,88 +30,7 @@ class contain extends React.Component{
           </div>
           {/*<!--END BREAKING NEWS-->*/}
           <div className="row">
-            <div className="post-slider col-md-8 col-sm-8">
-              <div className="controls">
-                <p className="prev"><i className="fa fa-angle-left"></i></p>
-                <p className="next"><i className="fa fa-angle-right"></i></p>
-              </div>
-              <div className="slides">
-                <article className="big clearfix">
-                  <img src="assets/img/big.jpg" alt="post" />
-                  <div className="info">
-                    <p className="tags">
-                      <a href="">Fashion</a>
-                    </p>
-                    <h1><a href="">What To Look Forward To In 2014</a></h1>
-                    <p className="text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                    <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-                  </div>
-                  <ul className="counters list-inline">
-                    <li>
-                      <a href=""><i className="fa fa-eye"></i>15271</a>
-                    </li>
-                    <li>
-                      <a href=""><i className="fa fa-comment"></i>25</a>
-                    </li>
-                    <li>
-                      <a href=""><i className="fa fa-heart"></i>724</a>
-                    </li>
-                  </ul>
-                </article>
-                <article className="big clearfix">
-                  <img src="assets/img/big.jpg" alt="post" />
-                  <div className="info">
-                    <p className="tags">
-                      <a href="">Lifestyle</a>
-                      <a href="">Fashion</a>
-                    </p>
-                    <h1><a href="">Playstation or Xbox</a></h1>
-                    <p className="text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                    <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-                  </div>
-                  <ul className="counters list-inline">
-                    <li>
-                      <a href=""><i className="fa fa-eye"></i>15271</a>
-                    </li>
-                    <li>
-                      <a href=""><i className="fa fa-comment"></i>25</a>
-                    </li>
-                    <li>
-                      <a href=""><i className="fa fa-heart"></i>724</a>
-                    </li>
-                  </ul>
-                </article>
-                <article className="big clearfix">
-                  <img src="assets/img/big.jpg" alt="post" />
-                  <div className="info">
-                    <p className="tags">
-                      <a href="">Lifestyle</a>
-                      <a href="">Fashion</a>
-                    </p>
-                    <h1><a href="">Urbanization</a></h1>
-                    <p className="text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                    <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-                  </div>
-                  <ul className="counters list-inline">
-                    <li>
-                      <a href=""><i className="fa fa-eye"></i>15271</a>
-                    </li>
-                    <li>
-                      <a href=""><i className="fa fa-comment"></i>25</a>
-                    </li>
-                    <li>
-                      <a href=""><i className="fa fa-heart"></i>724</a>
-                    </li>
-                  </ul>
-                </article>
-              </div>
-            </div>
+
             <article className="col-md-4 col-sm-4 mid">
               <div className="img">
                 <img src="assets/img/mid.jpg" alt="post" />
@@ -119,14 +38,15 @@ class contain extends React.Component{
               </div>
               <div className="info">
                 <p className="tags">
-                  <a href="">Lifestyle</a>
-                  <a href="">Fashion</a>
+                  <a href="">Science</a>
+                  <a href="">lifestyle</a>
                 </p>
-                <h1><a href="">Most Popular Food 1</a></h1>
+                <h1><a href="">Most Popular Food 2</a></h1>
                 <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
                 <p className="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
+
               </div>
               <ul className="counters list-inline">
                 <li>
@@ -140,37 +60,7 @@ class contain extends React.Component{
                 </li>
               </ul>
             </article>
-          </div>
-          <div className="row">
-          <article className="col-md-4 col-sm-4 mid">
-            <div className="img">
-              <img src="assets/img/mid.jpg" alt="post" />
-              <div className="overlay"></div>
-            </div>
-            <div className="info">
-              <p className="tags">
-                <a href="">Science</a>
-                <a href="">lifestyle</a>
-              </p>
-              <h1><a href="">Most Popular Food 2</a></h1>
-              <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
-              <p className="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
 
-            </div>
-            <ul className="counters list-inline">
-              <li>
-                <a href=""><i className="fa fa-eye"></i>15271</a>
-              </li>
-              <li>
-                <a href=""><i className="fa fa-comment"></i>25</a>
-              </li>
-              <li>
-                <a href=""><i className="fa fa-heart"></i>724</a>
-              </li>
-            </ul>
-          </article>
             <article className="col-md-4 col-sm-4 mid">
               <div className="img">
                 <img src="assets/img/mid.jpg" alt="post" />
@@ -201,6 +91,7 @@ class contain extends React.Component{
                 </li>
               </ul>
             </article>
+
             <article className="col-md-4 col-sm-4 mid">
               <div className="img">
                 <img src="assets/img/mid.jpg" alt="post" />
@@ -230,8 +121,11 @@ class contain extends React.Component{
                 </li>
               </ul>
             </article>
+
           </div>
+
           <div className="row">
+
             <article className="col-md-4 col-sm-4 mid">
               <div className="img">
                 <img src="assets/img/mid.jpg" alt="post" />
@@ -261,9 +155,10 @@ class contain extends React.Component{
                 </li>
               </ul>
             </article>
-            <article className="col-md-8 col-sm-8 big">
+
+            <article className="col-md-4 col-sm-4 mid">
               <div className="img">
-                <img src="assets/img/big.jpg" alt="post" />
+                <img src="assets/img/mid.jpg" alt="post" />
                 <div className="overlay"></div>
               </div>
               <div className="info">
@@ -271,7 +166,7 @@ class contain extends React.Component{
                   <a href="">Science</a>
                   <a href="">lifestyle</a>
                 </p>
-                <h1><a href="">LATEST NEWS</a></h1>
+                <h1><a href="">Most Popular Food 6</a></h1>
                 <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
                 <p className="text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -290,7 +185,133 @@ class contain extends React.Component{
                 </li>
               </ul>
             </article>
+
+            <article className="col-md-4 col-sm-4 mid">
+              <div className="img">
+                <img src="assets/img/mid.jpg" alt="post" />
+                <div className="overlay"></div>
+              </div>
+              <div className="info">
+                <p className="tags">
+                  <a href="">Science</a>
+                  <a href="">lifestyle</a>
+                </p>
+                <h1><a href="">Most Popular Food 7</a></h1>
+                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
+                <p className="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+
+              </div>
+              <ul className="counters list-inline">
+                <li>
+                  <a href=""><i className="fa fa-eye"></i>15271</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-comment"></i>25</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-heart"></i>724</a>
+                </li>
+              </ul>
+            </article>
+
           </div>
+
+          <div className="row">
+
+            <article className="col-md-4 col-sm-4 mid">
+              <div className="img">
+                <img src="assets/img/mid.jpg" alt="post" />
+                <div className="overlay"></div>
+              </div>
+              <div className="info">
+                <p className="tags">
+                  <a href="">Science</a>
+                  <a href="">lifestyle</a>
+                </p>
+                <h1><a href="">Most Popular Food 8</a></h1>
+                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
+                <p className="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+
+              </div>
+              <ul className="counters list-inline">
+                <li>
+                  <a href=""><i className="fa fa-eye"></i>15271</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-comment"></i>25</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-heart"></i>724</a>
+                </li>
+              </ul>
+            </article>
+
+            <article className="col-md-4 col-sm-4 mid">
+              <div className="img">
+                <img src="assets/img/mid.jpg" alt="post" />
+                <div className="overlay"></div>
+              </div>
+              <div className="info">
+                <p className="tags">
+                  <a href="">Science</a>
+                  <a href="">lifestyle</a>
+                </p>
+                <h1><a href="">Most Popular Food 9</a></h1>
+                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
+                <p className="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+
+              </div>
+              <ul className="counters list-inline">
+                <li>
+                  <a href=""><i className="fa fa-eye"></i>15271</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-comment"></i>25</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-heart"></i>724</a>
+                </li>
+              </ul>
+            </article>
+
+            <article className="col-md-4 col-sm-4 mid">
+              <div className="img">
+                <img src="assets/img/mid.jpg" alt="post" />
+                <div className="overlay"></div>
+              </div>
+              <div className="info">
+                <p className="tags">
+                  <a href="">Science</a>
+                  <a href="">lifestyle</a>
+                </p>
+                <h1><a href="">Most Popular Food 10</a></h1>
+                <p className="details">Sep 25, 2013 | <a href="author.html">Alex Grosville</a></p>
+                <p className="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+
+              </div>
+              <ul className="counters list-inline">
+                <li>
+                  <a href=""><i className="fa fa-eye"></i>15271</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-comment"></i>25</a>
+                </li>
+                <li>
+                  <a href=""><i className="fa fa-heart"></i>724</a>
+                </li>
+              </ul>
+            </article>
+
+          </div>
+
         </div>
         {/*<!--END CONTENT-->*/}
 
