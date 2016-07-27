@@ -6,6 +6,7 @@ import Main from '../components/Main'
 import Index from '../components/pages/index'
 import Promo from '../components/pages/promo'
 import ContactUs from '../components/pages/contact-us'
+import NotFoundRoute from '../components/pages/404'
 // END CHILDREN
 
 import { Router, Route, IndexRoute, BrowserHistory, useRouterHistory } from 'react-router'
@@ -19,6 +20,7 @@ export default (
     <Route path="/" component={Main}>
       <Route path="promo/" component={Promo} />
       <Route path="contact-us/" component={ContactUs} />
+      <Route path="*" component={NotFoundRoute} />
       <IndexRoute component={Index}/>
     </Route>
   </Router>
