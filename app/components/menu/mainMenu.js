@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 class mainMenu extends React.Component{
   constructor(props,context){
@@ -12,7 +13,7 @@ class mainMenu extends React.Component{
       <nav className="clearfix" id="menu">
         <a href="" id="menu-button"><i className="fa fa-bars"></i></a>
         <ul className="menu col-md-9 list-inline">
-          <li><a href="#">Hot Deals (Promo)</a></li>
+          <li><Link to='/promo/'>Hot Deals (Promo)</Link></li>
           <li><a href="#">Food</a></li>
           <li><a href="#">Resto</a></li>
           <li><a href="#">Hot News</a></li>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 import LoginModal from '../modal/login' // import login modal
 import { logout,checkToken } from '../../utils/authentication/auth'// import logout function
@@ -29,9 +30,9 @@ class topMenu extends React.Component{
 
     return(
       <div className="container">
-        <a href="#" className="logo">
+        <Link to='/' className="logo">
           <img src="assets/img/logo/logo_inline.png" alt="logo" />
-        </a>
+        </Link>
 
         {/*<!--TOP MENU-->*/}
         <nav className="clearfix">
