@@ -10,8 +10,8 @@ class Promo extends React.Component{
           <img src="assets/img/404.jpg" alt="404" />
           <div className="info-404">
             <h1>
-              <span>404.</span>
-              <small>That's an error.</small>
+              <span>404.</span><br/>
+              <small>Oops an error.</small>
             </h1>
             <p>
               YOU BEING STUPID OR DISTRA IS STILL NOT FINISH

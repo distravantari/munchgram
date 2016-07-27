@@ -14,11 +14,11 @@ class mainMenu extends React.Component{
         <a href="" id="menu-button"><i className="fa fa-bars"></i></a>
         <ul className="menu col-md-9 list-inline">
           <li><Link to='/promo/'>Hot Deals (Promo)</Link></li>
-          <li><a href="#">Food</a></li>
-          <li><a href="#">Resto</a></li>
-          <li><a href="#">Hot News</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">New Opening</a></li>
+          <li><Link to='/food/'>Food</Link></li>
+          <li><Link to='/resto/'>Resto</Link></li>
+          <li><Link to='/news/'>Hot News</Link></li>
+          <li><Link to='/recipes/'>Recipes</Link></li>
+          <li><Link to='/new-opening/'>New Opening</Link></li>
 
         </ul>
         <form className="form-search col-md-3 pull-right">

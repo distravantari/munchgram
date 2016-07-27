@@ -40,7 +40,7 @@ class topMenu extends React.Component{
           <ul className="list-inline">
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/contact-us/'>Contact us</Link></li>
-            <li><a href="#">About Us</a></li>
+            <li><Link to='/about-us/'>About Us</Link></li>
             { logButton }
           </ul>
         </nav>

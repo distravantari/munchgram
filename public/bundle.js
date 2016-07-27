@@ -29592,6 +29592,10 @@
 
 	var _contactUs2 = _interopRequireDefault(_contactUs);
 
+	var _aboutUs = __webpack_require__(849);
+
+	var _aboutUs2 = _interopRequireDefault(_aboutUs);
+
 	var _ = __webpack_require__(827);
 
 	var _2 = _interopRequireDefault(_);
@@ -29604,9 +29608,9 @@
 
 	// END CHILDREN
 
-	// START CHILDREN
 	var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({ queryKey: false });
 
+	// START CHILDREN
 	exports.default = _react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: history, onUpdate: function onUpdate() {
@@ -29617,6 +29621,7 @@
 	    { path: '/', component: _Main2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: 'promo/', component: _promo2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'contact-us/', component: _contactUs2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'about-us/', component: _aboutUs2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _2.default }),
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _index2.default })
 	  )
@@ -29887,8 +29892,8 @@
 	              'li',
 	              null,
 	              _react2.default.createElement(
-	                'a',
-	                { href: '#' },
+	                _reactRouter.Link,
+	                { to: '/about-us/' },
 	                'About Us'
 	              )
 	            ),
@@ -57290,8 +57295,8 @@
 	            'li',
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
+	              _reactRouter.Link,
+	              { to: '/food/' },
 	              'Food'
 	            )
 	          ),
@@ -57299,8 +57304,8 @@
 	            'li',
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
+	              _reactRouter.Link,
+	              { to: '/resto/' },
 	              'Resto'
 	            )
 	          ),
@@ -57308,8 +57313,8 @@
 	            'li',
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
+	              _reactRouter.Link,
+	              { to: '/news/' },
 	              'Hot News'
 	            )
 	          ),
@@ -57317,8 +57322,8 @@
 	            'li',
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
+	              _reactRouter.Link,
+	              { to: '/recipes/' },
 	              'Recipes'
 	            )
 	          ),
@@ -57326,8 +57331,8 @@
 	            'li',
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
+	              _reactRouter.Link,
+	              { to: '/new-opening/' },
 	              'New Opening'
 	            )
 	          )
@@ -69382,10 +69387,11 @@
 	                null,
 	                '404.'
 	              ),
+	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
 	                'small',
 	                null,
-	                'That\'s an error.'
+	                'Oops an error.'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -71315,6 +71321,861 @@
 
 	exports['default'] = _deprecate2['default'](_useQueries2['default'], 'enableQueries is deprecated, use useQueries instead');
 	module.exports = exports['default'];
+
+/***/ },
+/* 849 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(298);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _upperSection = __webpack_require__(826);
+
+	var _upperSection2 = _interopRequireDefault(_upperSection);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//promotion,most popular food,latest news,most discuss post
+
+	var Promo = function (_React$Component) {
+	  _inherits(Promo, _React$Component);
+
+	  function Promo() {
+	    _classCallCheck(this, Promo);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Promo).apply(this, arguments));
+	  }
+
+	  _createClass(Promo, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-md-9 col-sm-12' },
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              'About us'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'row' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'about-us col-md-12 col-sm-12' },
+	                _react2.default.createElement('img', { src: 'assets/img/about.jpg', alt: 'about' }),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'small',
+	                      null,
+	                      'Who we are and what we do?'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Our team'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'team row' },
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4 col-sm-4 mid member' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'img' },
+	                  _react2.default.createElement('img', { src: 'assets/img/team.jpg', alt: 'post2' }),
+	                  _react2.default.createElement('div', { className: 'overlay' })
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'tags' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Founder'
+	                    ),
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Ceo'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'author.html' },
+	                      'Trevis Marshal'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'text' },
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'social list-inline' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-google-plus' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa  fa-tumblr' })
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4 col-sm-4 mid member' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'img' },
+	                  _react2.default.createElement('img', { src: 'assets/img/team.jpg', alt: 'post2' }),
+	                  _react2.default.createElement('div', { className: 'overlay' })
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'tags' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Founder'
+	                    ),
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Ceo'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'author.html' },
+	                      'Julia Stanford'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'text' },
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'social list-inline' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-google-plus' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa  fa-tumblr' })
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'col-md-4 col-sm-4 mid member' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'img' },
+	                  _react2.default.createElement('img', { src: 'assets/img/team.jpg', alt: 'post2' }),
+	                  _react2.default.createElement('div', { className: 'overlay' })
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'tags' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Founder'
+	                    ),
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Ceo'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'author.html' },
+	                      'Alex Grosville'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'text' },
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'social list-inline' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-facebook' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa fa-google-plus' })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '#' },
+	                      _react2.default.createElement('i', { className: 'fa  fa-tumblr' })
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'statistic row' },
+	              _react2.default.createElement(
+	                'ul',
+	                { className: 'statistic list-inline col-md-12 col-sm-12' },
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('i', { className: 'fa fa-user' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    '17,435'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Users'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('i', { className: 'fa fa-pencil-square-o' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    '2,139'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Posts'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    '244,967'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Comments'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('i', { className: 'fa fa-download' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    '239'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Downloads'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement('i', { className: 'fa fa-picture-o' }),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    '32,234'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Images'
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'aside',
+	            { className: 'col-md-3 col-sm-12' },
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'aside-social list-inline visible-md visible-lg' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('i', { className: 'fa fa-facebook' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '162K'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('i', { className: 'fa fa-twitter' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '73K'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('i', { className: 'fa fa-google-plus' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '29K'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('i', { className: 'fa fa-rss' }),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '9,012'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'newsletter visible-md visible-lg' },
+	              _react2.default.createElement(
+	                'h3',
+	                null,
+	                'Newsletter'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Subscribe to be the first to know our about sales, events and special offers!'
+	              ),
+	              _react2.default.createElement(
+	                'form',
+	                { action: 'POST' },
+	                _react2.default.createElement('input', { type: 'email', className: 'form-control', placeholder: 'Enter your email' }),
+	                _react2.default.createElement('input', { type: 'submit', value: 'subscribe', className: 'btn btn-default btn-block' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'archive categories col-md-12 col-sm-6' },
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Archive'
+	              ),
+	              _react2.default.createElement(
+	                'ul',
+	                null,
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Fashion (13)'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Science (23)'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Lifestyle (781)'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Industry (14)'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Inspiration (3)'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Music (5)'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: '#' },
+	                    'Movies & Stars (32)'
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'most-commented col-md-12 col-sm-6' },
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Most commented posts'
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'small clearfix' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'counter' },
+	                  _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '74'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'tags' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Science'
+	                    ),
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'lifestyle'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Ray Ban Experience'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'details' },
+	                    'Sep 25, 2013 | ',
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'author.html' },
+	                      'Alex Grosville'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'text' },
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'counters list-inline' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-eye' }),
+	                      '15271'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                      '25'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-heart' }),
+	                      '724'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'small clearfix' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'counter' },
+	                  _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '74'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'tags' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Science'
+	                    ),
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'lifestyle'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Moto X Drop Test'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'details' },
+	                    'Sep 25, 2013 | ',
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'author.html' },
+	                      'Alex Grosville'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'text' },
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'counters list-inline' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-eye' }),
+	                      '15271'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                      '25'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-heart' }),
+	                      '724'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'article',
+	                { className: 'small clearfix' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'counter' },
+	                  _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '74'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'info' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'tags' },
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Science'
+	                    ),
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'lifestyle'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      'Lomography'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'details' },
+	                    'Sep 25, 2013 | ',
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: 'author.html' },
+	                      'Alex Grosville'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'text' },
+	                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'counters list-inline' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-eye' }),
+	                      '15271'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-comment' }),
+	                      '25'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'a',
+	                      { href: '' },
+	                      _react2.default.createElement('i', { className: 'fa fa-heart' }),
+	                      '724'
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Promo;
+	}(_react2.default.Component);
+
+	exports.default = Promo;
 
 /***/ }
 /******/ ]);
